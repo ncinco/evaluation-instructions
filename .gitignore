@@ -105,3 +105,16 @@ dist
 
 # Mac
 .DS_Store
+*.v2
+*.v1
+*.suo
+*.user
+MWNZ.Evaluation/src/MWNZ.Evaluation.Api/bin/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Integration/bin/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Integration/obj/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Models/bin/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Models/obj/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Services/bin/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Services/obj/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Tests/obj/
+MWNZ.Evaluation/src/MWNZ.Evaluation.Tests/bin/
