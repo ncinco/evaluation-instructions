@@ -10,7 +10,7 @@ namespace MWNZ.Evaluation.Services
             // not the best
             var result = new CompanyReponseViewModel();
 
-            if(companyReponse.Data != null)
+            if (companyReponse.Data != null)
             {
                 result.Data.Id = companyReponse.Data.Id;
                 result.Data.Name = companyReponse.Data.Name;

@@ -7,7 +7,5 @@
             Data = new Company();
             Error = new Error();
         }
-
-        public bool HasError { get { return !string.IsNullOrWhiteSpace(Error.ErrorCode); } }
     }
 }

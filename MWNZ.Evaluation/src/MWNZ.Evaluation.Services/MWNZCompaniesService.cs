@@ -11,7 +11,6 @@ namespace MWNZ.Evaluation.Services
         public MWNZCompaniesService(IMWNZCompaniesClient mWNZCompaniesClient)
         {
             _MWNZCompaniesClient = mWNZCompaniesClient;
-
         }
 
         public async Task<CompanyReponseViewModel> GetCompanyAsync(int id)
