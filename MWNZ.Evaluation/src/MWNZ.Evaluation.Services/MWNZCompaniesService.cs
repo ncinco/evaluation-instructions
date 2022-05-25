@@ -14,7 +14,7 @@ namespace MWNZ.Evaluation.Services
 
         }
 
-        public async Task<Company> GetCompanyAsync(int id)
+        public async Task<CompanyReponseViewModel> GetCompanyAsync(int id)
         {
             var response = await _MWNZCompaniesClient.GetCompanyAsync(id);
 

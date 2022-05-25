@@ -1,11 +1,6 @@
-﻿namespace MWNZ.Evaluation.Models
+﻿namespace MWNZ.Evaluation.Integration
 {
-    public class CompanyReponse
-    {
-        public Data Data { get; set; }
-    }
-
-    public class Data
+    public class DataReponse
     {
         public int Id { get; set; }
 

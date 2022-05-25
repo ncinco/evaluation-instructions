@@ -4,10 +4,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MWNZ.Evaluation.Integration;
 using MWNZ.Evaluation.Integration.Clients;
 using MWNZ.Evaluation.Integration.Interface;
 using MWNZ.Evaluation.Services;
 using MWNZ.Evaluation.Services.Interface;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace MWNZ.Evaluation
 {
@@ -27,9 +29,15 @@ namespace MWNZ.Evaluation
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MWNZ.Evaluation", Version = "v1" });
+                c.ExampleFilters();
             });
 
+            services.AddSwaggerExamplesFromAssemblyOf<Startup>();
+
             services.AddHttpClient();
+
+            // configuration options
+            services.Configure<ServerOptions>(Configuration.GetSection("ServerOptions"));
 
             // services
             services.AddTransient<IMWNZCompaniesService, MWNZCompaniesService>();

@@ -1,17 +1,29 @@
-﻿using MWNZ.Evaluation.Models;
+﻿using MWNZ.Evaluation.Integration;
+using MWNZ.Evaluation.Models;
 
 namespace MWNZ.Evaluation.Services
 {
     public static class Mapper
     {
-        public static Company ToServiceModel(this CompanyReponse companyReponse)
+        public static CompanyReponseViewModel ToServiceModel(this CompanyReponse companyReponse)
         {
-            return new Company
+            // not the best
+            var result = new CompanyReponseViewModel();
+
+            if(companyReponse.Data != null)
             {
-                Id = companyReponse.Data.Id,
-                Name = companyReponse.Data.Name,
-                Description = companyReponse.Data.Description
-            };
+                result.Data.Id = companyReponse.Data.Id;
+                result.Data.Name = companyReponse.Data.Name;
+                result.Data.Description = companyReponse.Data.Description;
+            }
+
+            if (companyReponse.Error != null)
+            {
+                result.Error.ErrorCode = companyReponse.Error.ErrorCode;
+                result.Error.ErrorDescription = companyReponse.Error.ErrorDescription;
+            }
+
+            return result;
         }
     }
 }
