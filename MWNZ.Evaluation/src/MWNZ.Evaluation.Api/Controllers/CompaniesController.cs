@@ -25,7 +25,7 @@ namespace MWNZ.Evaluation.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(Error))]
         [Produces("application/json")]
         [Route("/companies/{id}")]
-        public async Task<IActionResult> GetAsync(int id)
+        public async Task<ObjectResult> GetAsync(int id)
         {
             var result = await _MWNZCompaniesService.GetCompanyAsync(id);
 

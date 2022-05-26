@@ -1,6 +1,6 @@
 ﻿namespace MWNZ.Evaluation.Models
 {
-    public class CompanyReponseViewModel : BaseViewModel<Company>
+    public class CompanyReponseViewModel : BaseResponseViewModel<Company>
     {
         public CompanyReponseViewModel()
         {

@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MWNZ.Evaluation.Integration", "src\MWNZ.Evaluation.Integration\MWNZ.Evaluation.Integration.csproj", "{69379607-12B8-4F00-ACB3-4EE7A1A657DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWNZ.Evaluation.Integration", "src\MWNZ.Evaluation.Integration\MWNZ.Evaluation.Integration.csproj", "{69379607-12B8-4F00-ACB3-4EE7A1A657DD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWNZ.Evaluation.Api", "src\MWNZ.Evaluation.Api\MWNZ.Evaluation.Api.csproj", "{F973099D-D5B9-4EB4-87AF-69C357542988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MWNZ.Evaluation.Tests", "src\MWNZ.Evaluation.Tests\MWNZ.Evaluation.Tests.csproj", "{A4E92219-A557-4702-ADBD-F529D69B9259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWNZ.Evaluation.Tests", "src\MWNZ.Evaluation.Tests\MWNZ.Evaluation.Tests.csproj", "{A4E92219-A557-4702-ADBD-F529D69B9259}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{706616A5-9C09-48CC-A83B-747DD447AE08}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MWNZ.Evaluation.Services", "src\MWNZ.Evaluation.Services\MWNZ.Evaluation.Services.csproj", "{D25CFB25-3188-4E47-B223-926D66865B42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWNZ.Evaluation.Services", "src\MWNZ.Evaluation.Services\MWNZ.Evaluation.Services.csproj", "{D25CFB25-3188-4E47-B223-926D66865B42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MWNZ.Evaluation.Models", "src\MWNZ.Evaluation.Models\MWNZ.Evaluation.Models.csproj", "{D0197376-A64F-4022-9B27-AED5EBBF2677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWNZ.Evaluation.Models", "src\MWNZ.Evaluation.Models\MWNZ.Evaluation.Models.csproj", "{D0197376-A64F-4022-9B27-AED5EBBF2677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
